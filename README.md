@@ -197,11 +197,6 @@ Projemi aşağıdaki gifi izleyerek görüntüleyebilirsiniz.
 
 ![](https://github.com/melikeoguz/Melike-Oguz-Soru-Havuzu/blob/main/melike-oguz-soru-havuzu.gif)
 
-<p>Emekleriniz için teşekkür ederim hocam</p>
+<p>Emekleriniz için çok teşekkür ederim hocam</p>
 Saygılarımla
-
-![Login İşlemleri](https://hayalindekiyasam.files.wordpress.com/2021/01/login-kullanici-ekleme-ve-guncelleme.gif)
-
-![](https://github.com/melikeoguz/Melike-Oguz-Soru-Havuzu/blob/main/melike-oguz-soru-havuzu.gif)
-
 
