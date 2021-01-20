@@ -91,8 +91,5 @@ npm install -g @angular/cli
 ionic bach problemi
 </br>
 
-<a href="https://gifyu.com/image/ULDs"><img src="https://s2.gifyu.com/images/login-kullanici-ekleme-ve-guncelleme.gif" alt="login-kullanici-ekleme-ve-guncelleme.gif" border="0" /></a>
-
-
 
 ![](https://hayalindekiyasam.files.wordpress.com/2021/01/login-kullanici-ekleme-ve-guncelleme.gif)
