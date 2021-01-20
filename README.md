@@ -89,4 +89,4 @@ npm install -g @angular/cli
 <h4>Karşılaştığım Sorunlar</h4>
 
 ionic bach problemi
-![](/login-kullanıcı ekleme ve güncelleme.gif)
+![](https://hayalindekiyasam.files.wordpress.com/2021/01/login-kullanici-ekleme-ve-guncelleme.gif)
