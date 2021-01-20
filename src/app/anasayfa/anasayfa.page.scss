@@ -1,0 +1,65 @@
+.bilgileri-duzenle-button{
+    font-size: 13px;
+    color:#ffffff;
+    background-color: #4CAF50;
+    padding: 10px;
+    margin-top: 10px;
+    float: right;
+    display: block;
+    position: relative;
+    border-radius: 7px;
+    opacity: 0.6;
+    transition: 0.3s;
+    margin-right: 15px;
+}
+.bilgileri-duzenle-button:hover{
+    background-color: gray;
+}
+.sinava-basla {
+    color: #ffffff;
+    font-size: 14px;
+    background-color: blue;
+    transition: 0.3s;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.sinava-basla:hover{
+    background-color: gray;
+}
+
+.label-sinav{
+    width: 100%;
+    text-align: center;
+}
+
+.tarih{
+    color: gray;
+    font-size: 12px;
+}
+
+.dogru_sayisi{
+    color: green;
+    font-size: 11px;
+}
+
+.yanlis_sayisi{
+    color: red;
+    font-size: 11px;
+}
+
+.puan {
+    color:blue;
+}
+
+.en-iyisi{
+    color: darkcyan;
+    font-size: 12px;
+}
+.kisi {
+    font-size: 14px;
+    color:chocolate;
+}

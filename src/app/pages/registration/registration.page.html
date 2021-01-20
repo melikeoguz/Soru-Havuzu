@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Hoşgeldin :)</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="ion-padding">
+  
+    <ion-item>
+      <ion-label position="floating">Adın ve Soyadın</ion-label>
+      <ion-input type="text" [(ngModel)]="fullname"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Doğum Tarihi</ion-label>
+      <ion-datetime displayFormat="DD MM YYYY" placeolder="Date of birth" [(ngModel)]="datebirth"></ion-datetime>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">E-Posta</ion-label>
+      <ion-input type="email" [(ngModel)]="email"> </ion-input>
+    </ion-item>
+    
+    
+    <ion-item>
+      <ion-label>Cinsiyet</ion-label>
+      <ion-select [(ngModel)] = "gender">
+        <ion-select-option value="erkek">Erkek</ion-select-option>
+        <ion-select-option value="kadin">Kadın</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label>Hazırlandığın Sınav</ion-label>
+      <ion-select [(ngModel)] = "sinav">
+        <ion-select-option value="yks">YKS</ion-select-option>
+        <ion-select-option value="lgs">LGS</ion-select-option>
+        <ion-select-option value="kpss">KPSS</ion-select-option>
+        <ion-select-option value="ales">ALES</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Şifre</ion-label>
+      <ion-input type="password" [(ngModel)]="password"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Şifre Tekrar</ion-label>
+      <ion-input type="password" [(ngModel)]="passwordconfirm"> </ion-input>
+    </ion-item>
+    
+    <ion-button expand="full" (click)="tryRegistration()" [disabled]="disabledbutton">Hoşbuldum</ion-button>
+
+  </ion-list>
+</ion-content>

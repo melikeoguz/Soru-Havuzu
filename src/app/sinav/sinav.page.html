@@ -1,0 +1,1094 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{sinav | uppercase}} Sınavı</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="sinav=='yks'" class="ion-padding">
+    
+    
+    <ion-list>
+      <ion-label class="soru">
+          Bilim kurgu, bilimdeki yeniliklerle birlikte XIX. yüzyılın
+          ortalarından itibaren gelişen bir edebî türdür. Türün iki
+          örnek yazarı, Jules Verne ve H. G. Wells, eserlerinde
+          bilimin yeni yüzyılın başlangıcına kadar imkânsız
+          görüleni, örneğin denizaltıları ve uzay araçlarını,
+          mümkün kılma konusundaki maharetini anlatmışlardır.
+          Sinema, günün şartlarında mümkün görülmeyeni
+          gösterebilme özelliğinden dolayı bu tür için doğal bir
+          mecradır. Ne var ki bilim kurgunun beyaz perdede yer
+          bulması, diğer pek çok türden daha düzensizdir.
+          Sinemanın ilk yıllarında sadece birkaç bilim kurgu filmi
+          yapılırken bu tür ancak 1950'lerden sonra gelişme
+          gösterebilmiştir
+        </ion-label>
+      <ion-radio-group [(ngModel)]="soru1" >
+        <ion-item>
+          <ion-item class="soru_siklari">A) Hayal gücü ve bilimsel gelişmelerin birleşimiyle ortaya
+çıkmıştır.
+</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">B) Türün karakteristik niteliklerine bazı yazarların
+metinlerinde rastlanmaktadır.</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">C) Sınırlılıkları aşmada bilimin bir araç olarak
+kullanılabileceğini göstermektedir.</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">D) Türün sinema yapımları edebî örneklerinden daha
+fazla ilgi görmüştür.</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">E) Sinemanın sağladığı görsellik imkânı sayesinde
+sinemada kendine yer bulmuştur. </ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Dünya ekonomisinde önemli bir yere sahip olan ve
+sermayenin küresel dolaşımını kontrol eden şehirler
+küresel bir etkiye sahiptir. Bunlar aynı zamanda mal,
+hizmet, bilgi ve kültür alanlarında küresel ölçekte birer
+üretim ve dağıtım merkezleridir.
+<b>Bu nitelikler aşağıdaki şehirlerin hangisinde<u>
+daha azdır?</u>
+</b>
+</ion-label>
+      <ion-radio-group [(ngModel)]="soru2" >
+        <ion-item>
+          <ion-item class="soru_siklari">A) Lizbon</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">B) Paris</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">C) New York</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">D) Tokyo</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">E) Londra</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">a(a+b)=c(c-b)= 143 olduğuna göre (a+b+c) toplamı kaçtır ?</ion-label>
+      <ion-radio-group [(ngModel)]="soru3" >
+        <ion-item>
+          <ion-item class="soru_siklari">A) 22</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">B) 26</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">C) 30</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">D) 32</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">E) 38</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Temel hâldeki 22Ti atomunun elektron dizilimiyleilgili aşağıdaki ifadelerden hangisi doğrudur?</ion-label>
+      <ion-radio-group [(ngModel)]="soru4" >
+        <ion-item>
+          <ion-item class="soru_siklari">A) p orbitallerinde toplam 14 elektron bulunur.</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">B) d orbitallerinde toplam 4 elektron bulunur. </ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">C) Baş kuantum sayısı (n) 4 olan toplam 4 elektron
+vardır. </ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">D) s orbitallerinde toplam 8 elektron bulunur.</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">E) Açısal momentum kuantum sayısı (l) 3 olan toplam
+2 elektron vardır.</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Bir canlının fotosentez yapabilmesi için
+aşağıdakilerden hangisine kesinlikle sahip olması
+gerekir?
+</ion-label>
+      <ion-radio-group [(ngModel)]="soru5" >
+        <ion-item>
+          <ion-item class="soru_siklari">A) Kloroplasta</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">B) Suyu ayrıştırabilen enzime</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">C) Güneş ışığını soğuran pigmente</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">D) Ökaryotik hücre yapısına</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">E) Mitokondriye</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Aşağıdaki cümlelerin hangisinde altı çizili sözcüğün
+yazımı yanlıştır?
+</ion-label>
+      <ion-radio-group [(ngModel)]="soru6" >
+        <ion-item>
+          <ion-item class="soru_siklari">A) Bu araştırmada bizi şaşırtan bulgu, çevreciliğin
+<u>barışsever</u> akımlarla çatışmasıdır.
+</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">B) O kadar merhametlidir ki yakın arkadaşları arasında
+<u>karıncaincitmez</u> olarak anılır.
+</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">C) Başkentin ortasındaki <u>gökdelenler</u>, etrafındaki binaları
+yutacakmış gibi duruyordu.
+</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">D) İnsanlar, <u>çokbilmiş</u> olarak tanınan kişilerle arkadaşlık
+kurmaktan uzak dururlar</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">E) Orada yaşamamış, o insanlarla hiç bağ kurmamış
+gibi ne <u>değerbilir</u> ne yol yordam.
+</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">İngiltere’nin eski Başbakanı Lloyd George; “Türkler,İngiltere’nin dört savaş yılı içinde aldığı her şeyi gerialdılar. Bu, İngiltere’nin dış siyasetinde silinmez birlekedir.” demiştir.İngiltere Başbakanı bu ifadeyi aşağıdakilerdenhangisiyle ilgili kullanmıştır?</ion-label>
+      <ion-radio-group [(ngModel)]="soru7" >
+        <ion-item>
+          <ion-item class="soru_siklari">A) Londra Konferansı </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">B) Paris Barış Konferansı</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">C) Lozan Antlaşması</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">D) Ankara Antlaşması</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-item class="soru_siklari">E) Moskova Antlaşması</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Yahya Kemal’in şiirlerini bir araya ---- Kendi Gök Kubbemiz, adını bir şiirin başlığından değil, bir mısradan ----. Bu cümlede boş bırakılan yerlere aşağıdakilerden hangisi sırasıyla getirilmelidir?</ion-label>
+      <ion-radio-group [(ngModel)]="soru8" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) toplayan – veriyor  </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) birleştiren – esinleniyor </ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) getiren - alıyor</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) derleyen - çağrıştırıyor </ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) kapsayan - getiriyor</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru"> Bir sanat akımı olarak postmodernizm, 1950’lerin sonlarından itibaren kendisinden söz ettirmeye başlamış, 1960’lardan beri Batı edebiyatlarında kendisini hissettirip asıl yaygınlığını ve günlük hayata girişini de 1980’lerin başında gerçekleştirmiştir.Bu cümlede aşağıdakilerden hangisi yoktur?</ion-label>
+      <ion-radio-group [(ngModel)]="soru9" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) Dönüşlülük zamiri</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) Yer-yön zarfı</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) İsim-fiil</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) Zarf-fiil</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) Bağlaç</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru"> Bir kedi, avına saldırmaya hazırlanırken başını ritmik şekilde bir o yana bir bu yana sallar. Bu,birçok yırtıcı hayvanın uyguladığı bir yöntem değil midir? Biz de başımızı iki yana ne kadar sallarsak bir nesnenin yanal hareketleriyle yer değiştirme derecesini o oranda azaltabileceğimizi görürüz.Bu parçada aşağıdakilerden hangisi yoktur? </ion-label>
+      <ion-radio-group [(ngModel)]="soru10" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) İşaret sıfatı</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) Belgisiz sıfat</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) Sayı sıfatı</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) Niteleme sıfatı</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) Soru sıfatı</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+
+  </ion-list>
+  <ion-list *ngIf="sinav=='ales'" class="ion-padding">
+    
+    <ion-list>
+    <ion-label class="soru">
+      A, B ve C küçükten büyüğe doğru sıralanmış ardışıkrakamlardır. Bu rakamlar kullanılarak iki basamaklı   AA, BB ve CC doğal sayıları oluşturuluyor.
+
+      AA + BB + CC toplamu 7 ile tam bölündüğüne göre, A kaçtır?
+      </ion-label>
+      <ion-radio-group [(ngModel)]="soru1" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) 3 </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) 4</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) 5</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) 6</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) 7 </ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">2019-ALES/3/SAYISALAğırlıkları 68, 72, 75 ve 79 kilogram olan dört kişidenrastgele ikisi, taşıma kapasitesi 150 kilogram olan birasansöre biniyor.
+      Buna göre, asansöre binenlerin toplam ağırlıklarınınasansörün taşıma kapasitesini aşmama olasılığıkaçtır?</ion-label>
+      <ion-radio-group [(ngModel)]="soru2" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) 1/2</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) 1/4</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) 2/3</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) 3/4</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) 5/6</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">I.   Bakterilerin ürettiği antibiyotiklerin daha sonralaboratuvar ortamında sentezlenmesi bunun entipik örneğidir.
+      II.  Araştırmacılar, yapay bir malzeme türü olan metalkafeslerdeki yapının bazı doğal minerallerde devar olduğunu fark etti.
+      III. Bilim dünyasında doğadan esinlenerek günlükhayattaki problemlerin çözümüne yönelikmalzemelerin veya teknolojilerin geliştirilmesinesıkça rastlanır.
+      IV. Oysa bu minerallerin doğadaki hâli, yapaymalzeme geliştirildiği sırada henüz keşfedilmişdeğildi.
+      V. Ancak bu defa süreç bir bakıma tersinden işledi velaboratuvar işlemleri doğa gözlemlerinin önünegeçti. Yukarıda numaralanmış cümleler anlamlı bir bütünoluşturacak biçimde sıralandığında hangisi baştandördüncü olur?</ion-label>
+      <ion-radio-group [(ngModel)]="soru3" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) I</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) II</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) III</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) IV</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) V</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru"> 9! / (8! + 7!) işleminin sonucu kaçtır?</ion-label>
+      <ion-radio-group [(ngModel)]="soru4" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) 9</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) 8 </ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) 4</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) 2</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) 1</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Bu sitedeki dairelerin toplam sayısı 60'tır. Buna göre, bu sitedeki 2 odalı dairelerin toplam sayısı kaçtır? </ion-label>
+      <ion-radio-group [(ngModel)]="soru5" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) 12</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) 15</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) 18</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) 21</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) 24</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Bu parçada altı çizili sözcük yerine aşağıdakilerden hangisinin getirilmesi en uygundur?</ion-label>
+      <ion-radio-group [(ngModel)]="soru6" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) betimleyecek </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) irdeleyecek</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) yaygınlaştıracak</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) savunacak</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) destekleyecek</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">(I) Günümüzde yemek kültürü gerek görsel gerek yazılımedyada geniş bir yer kaplıyor. (II) Televizyonprogramlarında yemek, işlenen en popüler konulararasında. (III) Bir yandan da rengârenk ve parlakkapaklarıyla yemek kitapları kitapçı raflarındaokuyucusunu bekliyor. (IV) Üstelik bu durum sadeceTürkiye’ye özgü değil; Avrupa’da ve özellikle ABD’deyazılı ve görsel medyada, yemek son derece rağbetgören bir konu. (V) Gündelik hayatın önemli bir parçasıolan geleneksel yemek kültürleri medya sayesinde şahsiolmaktan çıkıp evrensel bir nitelik kazanıyor.</ion-label>
+      <ion-radio-group [(ngModel)]="soru7" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) I </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) II</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) III</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) IV</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) V</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Her sanatçı kendi kurallarını sanatını yaparken ortayakoyar. Bu, onun biraz da sanattan ne anladığıyla veya ne beklediğiyle ilgilidir. "Seçkin şairler çoktandır şiirülkesinin en çiçekli topraklarını bölüştüler. Ben dahabaşka bir şey yapacağım." diyordu Baudelaire. Çünküsanatçının dünyası apayrı olana eğilimlidir.Bu parçaya göre Baudelaire’in şiirde yapmakistediği aşağıdakilerden hangisidir?</ion-label>
+      <ion-radio-group [(ngModel)]="soru8" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) Kalıcı olmak </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) Özgün olmak</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) Etkin olmak</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) Değerli olmak</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) Verimli olmak</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru"> 2020-ALES/1/SAYISALBir N doğal sayısı 2, 3, 5, 9 ve 10 sayılarından dört tanesine tam bölünüyor, bir tanesine ise tambölünmüyor. Buna göre, N doğal sayısı bu beş sayıdan hangisinetam bölünmez?</ion-label>
+      <ion-radio-group [(ngModel)]="soru9" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) 2</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) 3</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) 5</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) 9</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) 10</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru"> Mektup, yüzyıllardır insanlar arasında bir iletişim aracıolmanın yanı sıra hasretin, sevincin, acının, hüznün vepek çok insani duygunun ---- olarak kişilerin zihninde,unutulmaz anıları barındıran o ---- ruhunu koruyor.</ion-label>
+      <ion-radio-group [(ngModel)]="soru10" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) habercisi - trajik</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) belirleyicisi - romantik</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) aktarıcısı - kaotik</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) savunucusu - otantik</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) taşıyıcısı - nostaljik</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-list>
+  <ion-list *ngIf="sinav=='lgs'"  class="ion-padding">
+    
+    <ion-list>
+      <ion-label class="soru">42. Nitelik ve nicelik bakımından çok iyi bir okur kitlesine sahip olduğumu düşünüyorum. Beni okuyanlar, gündelik ve edebiyat dışı okumalardan uzak duranlardır. Sıradan değildir onlar; kitap değil, yazar okumayı öğrenmişlerdir. Böyle bir okur kitlesini hak ettiğime inanıyorum çünkü kalemimin ucunu gelgeç modalar için yontmadım.Bu parçadaki altı çizili sözle anlatılmak istenen aşağıdakilerden hangisidir?</ion-label>
+        <ion-radio-group [(ngModel)]="soru1" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A)  Metni oluştururken okurun beklentilerini gözetmemek </ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) Yapıtı geleceğe taşıyacak unsurlara önem vermemek</ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C)  Herhangi bir sanat anlayışına bağlı olmama</ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) Eseri geçici beğenilere göre oluşturmama</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-label class="soru">Bugün çiçeklerin, ağaçların yüzü güldü. Benim de... Dört beş aylık ayrılıktan sonra “Merhaba!” dedi yağmur. Sabah kah-valtıda duydum şıpırtıyı. Çayımı kaptığım gibi fırladım balkona. Gerçekten yağıyor. Gök yarı güneşli... Her zamanki gibi değil yağış. “Hadi, biraz daha!” diyorum içimden. Islattı epey. Beni, bahçeyi... Tozları yıkadı. Şimdi pırıl pırıl her yer.Bu metnin anlatımında aşağıdakilerden hangisi yoktur?</ion-label>
+        <ion-radio-group [(ngModel)]="soru2" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A)  Farklı duyularla ilgili ayrıntılar </ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) Mecazlı söyleyiş</ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C)  Karşılaştırma</ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) Abartma</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-label class="soru">Edison altmış yedi yaşındayken bütün hayatını adadığı atölyesi yanar. O sırada yanında bulunan oğlu, babasının tepkisinin ne olacağını merak eder. Edison, oğluna “Anneni çağır, o da bizimle beraber izlesin.” der. Ertesi sabah kahvaltıda ailesini top-lar ve “Şu anda bütün hatalarımız yanmış durumda.” der. Edison bu olaydan üç hafta sonra ses kayıt sisteminin çekirdeğini oluşturan gramofonu icat eder. Bu olay, - - - - insan hayatındaki yerini göstermesi bakımından manidardır. Bu parçada boş bırakılan yere düşüncenin akışına göre aşağıdakilerden hangisi getirilmelidir?</ion-label>
+        <ion-radio-group [(ngModel)]="soru3" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A) iyimserliğin</ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) alçak gönüllülüğün</ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C) yardımseverliğin </ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) şefkatin</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-label class="soru"> Bu metinden Hulûsi Kentmen’le ilgili aşağıdakilerden hangisine ulaşılamaz? </ion-label>
+        <ion-radio-group [(ngModel)]="soru4" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A) Sinema ile şöhret kazandığına</ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) Sanatın farklı dallarıyla uğraştığına </ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C)   Sanat hayatına sinema ile başladığına</ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) Filmlerinde benzer karakterleri canlandırdığına</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-label class="soru">Rivayete göre önce eau admirable (hayranlık verici su), daha sonra da “eau de Cologne” (Köln suyu) adıyla pazarlanmaya başlanan kolonya ilk kez 1709 yılında üretilmiştir. İçeriğindeki maddelerin etkisiyle vücuttaki ısıyı çektiği için ferahlatıcı bir özelliğe sahip olan kolonya, ilk geliştirildiği yıllarda tıbbi amaçla kullanılmıştır. Ağız çalkalamada, yara temizlemede, kas ve eklem ağrılarının ovulmasında faydalanılmış, keskin kokusu sebebi ile bir ayıltıcı olarak çokça tercih edilmiştir. Osmanlı topraklarına girişi II. Abdülhamit Dönemi’nin ilk yıllarına rastlayan ve kozmetik ürünü olarak da kullanılan bu parfüm Türk geleneğinin, türlü şekerlemeler eşliğinde sunulan en gözde ikram ürünlerinden biri olmuştur. Bu parçada kolonya ile ilgili aşağıdakilerden hangisine değinilmemiştir? </ion-label>
+        <ion-radio-group [(ngModel)]="soru5" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A) Kullanım alanların</ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) Türk kültüründeki yerine</ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C)  İçeriğinde neler bulunduğuna</ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) Hangi isimlerle anıldığına</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-label class="soru">Aynı sözcükler kullanılarak oluşturulan söz öbekleri ve birleşik sözcüklerin bitişik mi, ayrı mı yazıldığına karar vermek için cümlede hangi anlamda kullanıldığına bakılır. Örneğin “yer” ve “altı” sözcüklerinin birleşmesiyle oluşan yapılar, hem “ye-rin altı (yer altı)” hem de “gizli ve yasa dışı (yeraltı)” anlamlarını sağlar. Bu kullanımlardan ilki (yer altı), anlamsal açıdan şeffaflık taşıdığından söz öbeği işlevindedir ve ayrı yazılmalıdır. Ancak anlamsal şeffaflığın bulunmadığı ikinci durumda sözcük (yeraltı), farklı bir kavramı karşılar hâle geldiği için yeni bir sözcük olarak değerlendirilmeli ve bitişik yazılmalıdır.Bu metne göre aşağıdakilerin hangisinde altı çizili sözün yazımı yanlıştır?</ion-label>
+        <ion-radio-group [(ngModel)]="soru6" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A)  Kendisine çok iyi bakacağımı, isterse sağ kolum olabileceğin </ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) Gözlerini açar açmaz, baş ucunda bekleyenlere gülümsemeyi ihmal etmedi.</ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C)  Müzenin kurulmasına önayak olan sanatçılarımıza, katkılarından dolayı minnettarız.</ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) Büyük bir maharetle attığı topun kaleye girmesine bıçaksırtı kalmıştı</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-label class="soru">Selanik, önemli bir liman şehri olmanın yanı sıra demir yolu ile de Belgrad, Manastır ve İstanbul gibi önemli şehirlere bağ-lanmaktaydı. Avrupa’da çıkarılan gazete, dergi ve kitaplardaki fikirler, farklı milletlerin bir arada yaşadığı Selanik üzerinden Osmanlı ülkesine yayılıyordu.Verilen bilgide Selanik’in, aşağıdaki özelliklerinden hangisine vurgu yapılmamıştır?</ion-label>
+        <ion-radio-group [(ngModel)]="soru7" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A)  Çok uluslu yapısına </ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) Sınır kenti olmasına</ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C)  Deniz kıyısında bulunmasın</ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) Kültürel yönden gelişmişliğine</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-label class="soru">Millî Mücadele Dönemi’nde Türk kadını, işgallere karşı çeşitli dernekler kurmuş, mitingler düzenlemiş, yardım dernekleri kurarak ordu, göçmenler ve kimsesizler için yardımlar toplamış, cephane imalathanelerinde çalışmış, kağnı kollarında cepheye erzak ve cephane taşımıştır. Buna göre Millî Mücadele Dönemi’nde Türk kadınının yapmış olduğu faaliyetler ile ilgili aşağıdakilerden hangisi söylenemez?</ion-label>
+        <ion-radio-group [(ngModel)]="soru8" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A)  Anadolu’daki azınlıkların haklarını savunmuşlardır. </ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) Cephe gerisinde faaliyetlerde bulunmuşlardır.</ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C)  Millî bilincin uyandırılması için çalışmışlardır</ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) İşgallere karşı örgütlenmişlerdir.</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-label class="soru"> “Gördün mü o hesap ve ceza gününü yalanlayanı!  İşte o; yetimi itip kakan, yoksula yedirmeyi özendirmeyen kimsedir.  Yazıklar olsun o namaz kılanlara ki onlar namazlarını ciddiye almazlar. Onlar (namazlarıyla) gösteriş yaparlar.  Ufacık bir yardıma bile engel olurlar.”(Ma’ûn suresi, 1-7. ayetler)
+  
+        Aşağıdakilerden hangisi bu sureden çıkarılabilecek sonuçlardan biri değildir?</ion-label>
+        <ion-radio-group [(ngModel)]="soru9" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A)  Yetim hakları korunmalıdır.</ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) Fakirlere yardım edilmelidir.</ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C)  Ölçü ve tartıda hile yapmaktan kaçınılmalıdır</ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) İbadetler sadece Allah rızası gözetilerek yapılmalıdır.</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-label class="soru"> Buzdolabının icat edilmediği dönemlerde dağların doruklarından buza dönüşen kar parçaları kesilir ve pazarlarda satılırmış. Adamın biri bir gün dağlardan bulup getirdiği buzları satmaya çalışmış ancak pek müşteri çıkmamış. Buz parçaları öğleye doğru erimeye başlayınca endişelenen adam “Sermayesi eriyip giden bu adama acıyın, merhamet edin; bu fakirden buz alan yok mu?” diye bağırmaya başlamış. O sırada öğrencileriyle oradan geçmekte olan bir âlim, öğrencilerine dönerek şöyle demiş: “Buzlarını satmaya çalışan adamın sözlerine dikkat edin. Eriyip giden; aslında sadece buzlar değil, en kıymetli sermayemiz olan zamandır. Zamanın boşu boşuna akıp gitmesine endişe etmeyen ziyandadır.”</ion-label>
+        <ion-radio-group [(ngModel)]="soru10" >
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">A) Yardımlaşma  </ion-item>
+            <ion-radio value="a"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">B) Ömür </ion-item>
+            <ion-radio value="b"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">C) Rızık  </ion-item>
+            <ion-radio value="c"></ion-radio>
+          </ion-item>
+          <ion-item class="soru_label">
+            <ion-item class="soru_siklari">D) Tevekkül</ion-item>
+            <ion-radio value="d"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+  </ion-list>
+  <ion-list *ngIf="sinav=='kpss'"  class="ion-padding">
+    
+    <ion-list>
+    <ion-label class="soru">
+      Bugüne  değin  hiç  aynı  ortamda  çalışmadık.  Ama  ça-lışma  disiplini  ve  işindeki  başarısı  açısından  yerinde  değil de yanında olmayı istediğim sayılı kişilerden bi-ridir o.
+      Bu  cümledeki  altı  çizili  sözle  anlatılmak  istenen  aşağıdakilerden hangisidir?
+      </ion-label>
+      <ion-radio-group [(ngModel)]="soru1" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) Sayıp sevmek </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) Onun gibi davranma</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) Birlikte çalışmak</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) Örnek göstermek</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) Düşüncesini sorgulamak </ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">2010 - KPSS / ORTAÖĞRETİMDiğer sayfaya geçiniz. A                                                                    25. (I)  Bu  kentte  ilk  olarak,  bana  gülümseyerek  bakan  beyaz  badanalı  evlerle  göz  göze  geldim.  (II)  Bütün  damlar,   yosun   tutmuş   oluklu   kiremitlerle   kaplıydı.    (III)  Balkon  demirleri  mavi  renkteydi.  (IV)  Cam  içle-rinde rengârenk sardunyalar göze çarpıyordu. (V) So-kaklar  daracıktı,  arabam  için  güçlükle  bir  park  yeri  buldum. (VI) Sonra, kahvedeki masalardan birine otu-rup etrafımdaki insanlarla sohbet etmeye başladım.Bu  parçadaki  numaralanmış  cümlelerin  hangisin-de,  insana  özgü  nitelikler  cansız  bir  varlığa  akta-rılmıştır?</ion-label>
+      <ion-radio-group [(ngModel)]="soru2" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) I</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) II</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) III</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) IV</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) V</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">(I)  Yaklaşık  yüz  yıl  ayakta  kalabilen  talihsiz  kent  Machu Picchu, bir salgın hastalık yüzünden terk edil-di.  (II)  Kenti  İnka  halkının  büyük  bir  çoğunluğu  gör-memişti, Batı ise onunla beş yüz yıl sonra tanışacak-tı.  (III)  And  Dağları  üzerinde  iki  bin  dört  yüz  metre  yükseklikte kurulan kenti 1911 yılında Amerikalı tarih-çi Hiram Bingham keşfetti. (IV) Kente, Urubomba va-disinden  geçen  kırk  sekiz  kilometrelik  “İnka  Kraliyet  Yolu”  ile  ulaşılıyordu.  (V)  Machu  Picchu  1983’ten  sonra UNESCO Dünya Miras Listesi’ndeki yerini aldı.Bu  parçadaki  numaralanmış  cümlelerin  hangisin-de neden belirtilmiştir?</ion-label>
+      <ion-radio-group [(ngModel)]="soru3" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) I</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) II</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) III</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) IV</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) V</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru"> Aşağıdaki cümlelerin hangisinde bir yazım yanlışıvardır?</ion-label>
+      <ion-radio-group [(ngModel)]="soru4" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) Olanları öğrenince tepkisi de sert oldu</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) Çağırsam o da bizimle gelir mi ki? </ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) Anladım ki onlar bu konuda haksız değiller.</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) Anlattıkları hiç de inandırıcı görünmüyor.</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) Verdiği karar pekte akıllıca değildi. </ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Aşağıdakilerin hangisinde soru, işi yapanı buldur-maya yöneliktir? </ion-label>
+      <ion-radio-group [(ngModel)]="soru5" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) Yarın sonuçlar açıklanacak mı?</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) Hafta sonunda sinemaya mı gitsek?</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) ahçeyi   böylesine   dağıtan fırtına değil mi?</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) Olanları sana anlattı mı?</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) Taşınmak çok mu zor oldu?</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">Yaşamını  alışkanlıklarla  sınırlamış  daha  doğrusu  on-ların  tutsağı  olmuş  bir  insanın  yazar  olduğunu  dü-şünmek üzücüdür. Düş kurmayan, rüya görmeyen bir yazar,  yazdıkça  yalnızca  kupkuru  bir  yazıcıya  dönü-şecektir.Bu parçaya göre, bir yazarda kesinlikle bulunmasıgereken nitelik aşağıdakilerden hangisidir?</ion-label>
+      <ion-radio-group [(ngModel)]="soru6" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) Çalışkanlık </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) Yalınlık</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) Titizlik</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) Yaratıcılık</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) Gerçeklik</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">(4 (-6)) / (-5 - (-6) + (-7)) işleminin sonucu nedir?</ion-label>
+      <ion-radio-group [(ngModel)]="soru7" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) -3 </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) -2</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) 2</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) 3</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) 4</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">a = 11/10 
+       b = 111/100 
+       c = 1111/1000 
+       olduğuna göre, aşağıdaki sıralamalardan hangisi doğrudur?</ion-label>
+      <ion-radio-group [(ngModel)]="soru8" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) a< b < c </ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) a < c < b</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) b < a < c</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) b < c < a</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) c < b < a</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru"> 
+        x - y = 5 
+         
+        y + z = 5 
+        
+        x + y + z = 17 
+        
+        olduğuna göre, y kaçtır?
+      </ion-label>
+      <ion-radio-group [(ngModel)]="soru9" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) 4</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) 5</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) 6</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) 7</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) 8</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <ion-list>
+      <ion-label class="soru">A,  B,  C  rakamları  kullanılarak  üç  basamaklı  ABC  ve  BAC sayıları oluşturuluyor. ABC - BAC = 180 olduğuna göre, A-B kaçtır?</ion-label>
+      <ion-radio-group [(ngModel)]="soru10" >
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">A) 2</ion-item>
+          <ion-radio value="a"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">B) 3</ion-item>
+          <ion-radio value="b"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">C) 4</ion-item>
+          <ion-radio value="c"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">D) 5</ion-item>
+          <ion-radio value="d"></ion-radio>
+        </ion-item>
+        <ion-item class="soru_label">
+          <ion-item class="soru_siklari">E) 6</ion-item>
+          <ion-radio value="e"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-list>
+   
+
+  <ion-button expand="full" (click)="Gonder()" >Kaydet</ion-button>
+</ion-content>

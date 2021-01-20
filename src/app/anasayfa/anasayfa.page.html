@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Anasayfa</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="tryLogout()">
+        <ion-icon slot="icon-only" name="exit-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <button (click)="BilgileriDuzenle()" class="bilgileri-duzenle-button" >Bilgilerimi Düzenle</button>
+
+  <ion-label class="label-sinav">
+    <button (click)="SinavaBasla()" class="sinava-basla">Sınava Başla</button>
+  </ion-label>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let row of sonuclar">
+      <ion-item>
+        <ion-label class="tarih">{{row.kayit_tarihi}}</ion-label>
+        <ion-label class="dogru_sayisi">Dogru : {{row.dogru}}</ion-label>
+        <ion-label class="yanlis_sayisi">Yanlış : {{row.yanlis}}</ion-label>
+        <ion-label class="puan">Puan : {{row.puan}}</ion-label>
+      </ion-item>
+      <ion-item-options slide="end">
+        <ion-item-option (click)="SonucDelete(row.sonuc_id)" color="danger">Sil</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <p><span class="en-iyisi">{{sinav | uppercase}} en iyisi : </span> <span class="kisi">{{kisi_adi}} - {{en_iyi_puan}}</span></p>
+  </ion-fab>
+</ion-content>
