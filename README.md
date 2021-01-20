@@ -96,6 +96,6 @@ ionic bach problemi
 
 <a href="https://gifyu.com/image/ULAL"><img src="https://s2.gifyu.com/images/melike-oguz-soru-havuzu.gif" alt="melike-oguz-soru-havuzu.gif" border="0" /></a>
 
-![](https://vimeo.com/502743669)
+![](https://github.com/melikeoguz/Melike-Oguz-Soru-Havuzu/blob/main/melike-oguz-soru-havuzu.gif)
 
 
