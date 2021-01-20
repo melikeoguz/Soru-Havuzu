@@ -94,6 +94,6 @@ ionic bach problemi
 
 ![Login İşlemleri](https://hayalindekiyasam.files.wordpress.com/2021/01/login-kullanici-ekleme-ve-guncelleme.gif)
 
-![Uygulamanın Tamamı](https://hayalindekiyasam.files.wordpress.com/2021/01/melike-oguz-soru-havuzu.gif)
+<a href="https://gifyu.com/image/ULAL"><img src="https://s2.gifyu.com/images/melike-oguz-soru-havuzu.gif" alt="melike-oguz-soru-havuzu.gif" border="0" /></a>
 
 
