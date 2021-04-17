@@ -197,6 +197,4 @@ Projemi aşağıdaki gifi izleyerek görüntüleyebilirsiniz.
 
 ![](https://github.com/melikeoguz/Melike-Oguz-Soru-Havuzu/blob/main/melike-oguz-soru-havuzu.gif)
 
-<p>Emekleriniz için çok teşekkür ederim hocam</p>
-Saygılarımla
 
