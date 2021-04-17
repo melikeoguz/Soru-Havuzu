@@ -2,7 +2,7 @@
 
 <hr> <h><b>Melike Oğuz -170201028 </b></h></hr>
 
- <img width="400" height="400" src="https://i.imgyukle.com/2021/01/17/HEZSfj.png" alt="foo" />
+ <img width="400" height="400" src="https://github.com/melikeoguz/Melike-Oguz-Soru-Havuzu/blob/main/HEZSfj.png" alt="foo" />
 
 
 <p style="text-align:justify"><b>Soru Havuzu</b> uygulaması sınava hazırlanan öğrencilere yönelik bir uygulamadır. Öğrenciler, bu uygulama sayesinde kendilerini test edebilir ve yanlış çözdüğü soruları görebilmektedir. Çözülen sorular sonucunda öğrenciler belli bir puan kazanmaktadır. Bu uygulamadaki amaç, öğrencilerin hazırladığı sınava karşı pratik yapmalarıdır. </p>
